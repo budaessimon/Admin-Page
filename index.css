@@ -289,3 +289,59 @@ main {
   border-top: 2px solid rgba(160, 160, 160, 0.19);
   border-bottom: 2px solid rgba(160, 160, 160, 0.19);
 }
+.Trending-projects {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.Trending-projects > h2 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 5vw;
+  font-size: 1.3vw;
+}
+.Trends-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 8%;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 20%;
+  height: 60%;
+  box-shadow: 0 1px 1px rgba(77, 77, 77, 0.2),
+    0 6px 20px 0 rgba(160, 160, 160, 0.19);
+}
+.Trend h2 {
+  font-size: 2vh;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.Trend {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  margin-left: 2vw;
+}
+.Trend p {
+  font-size: 1.5vh;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  width: 100%;
+}
+.Trend-image {
+  width: 6vh;
+  height: 6vh;
+}
+.Trends-holder .Trend .Trend-image:nth-child(odd) {
+  background-image: url("images/images.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 1px solid black;
+}
