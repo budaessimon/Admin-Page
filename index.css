@@ -1,0 +1,291 @@
+html {
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: #e2e8f0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+h1,
+p,
+h2,
+h3 {
+  margin: 0;
+}
+main {
+  min-width: 85%;
+  margin: 0;
+}
+.Side-bar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  position: relative;
+  margin-top: 0;
+  background-color: rgb(25, 146, 212);
+  width: 15vw;
+}
+.Side-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.7vh;
+}
+.Side-layout > button {
+  width: 100%;
+  height: 4vh;
+  border: 0;
+  color: white;
+  background-color: rgb(25, 146, 212);
+  font-size: 2vh;
+  font: bold;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5vw;
+}
+.Side-layout > button > i {
+  margin-left: 0.6vw;
+}
+.Side-layout > button:hover {
+  cursor: pointer;
+  background-color: rgb(19, 107, 155);
+}
+.Page-title {
+  margin-bottom: 0;
+  margin-top: 2.5vh;
+  margin-left: 1.2vw;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 1.7vh;
+}
+
+.Top-bar {
+  background-color: white;
+  position: relative;
+  height: 9.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-shadow: 0 1px 1px rgba(77, 77, 77, 0.2),
+    0 6px 20px 0 rgba(160, 160, 160, 0.19);
+}
+.Info-bar {
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Info-bar i {
+  margin-right: 0.5rem;
+  color: #080808;
+  font-size: 2.5vh;
+}
+.Info-bar input {
+  border-radius: 15px;
+  border: 0;
+  background-color: #e2e8f0;
+  outline: none;
+  width: 40vw;
+  height: 3vh;
+}
+.Profile-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2vw;
+  margin-left: 10vw;
+}
+.Profile-image {
+  height: 6vh;
+  width: 6vh;
+  background-image: url("images/images.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.Profile-bar {
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.Second-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20vw;
+  margin-left: 0;
+}
+.Second-profile p {
+  font-size: small;
+}
+.Second-image {
+  width: 7.5vh;
+  height: 7.5vh;
+  margin-right: 1vw;
+  border-radius: 100%;
+  background-image: url("images/images.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+}
+.Project-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  margin-left: 4vw;
+}
+.Project-buttons button {
+  background-color: rgb(25, 146, 212);
+  border: 0;
+  border-radius: 20px;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.Project-buttons button:hover {
+  cursor: pointer;
+  background-color: rgb(19, 107, 155);
+}
+.Pointer {
+  cursor: pointer;
+}
+.Projects {
+  display: flex;
+  flex-direction: row;
+}
+.Projects-holder > h2 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 2vw;
+  font-size: 1.3vw;
+}
+
+.Projects-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+  width: 22vw;
+  height: 22vh;
+  margin-left: 3vh;
+}
+.Card-detail {
+  width: 0.7vw;
+  height: 100%;
+  background-color: #f9cb17;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 1px 1px rgba(77, 77, 77, 0.2),
+    0 6px 20px 0 rgba(160, 160, 160, 0.19);
+}
+.Card-info {
+  width: 85%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: aliceblue;
+  box-shadow: 0 1px 1px rgba(77, 77, 77, 0.2),
+    0 6px 20px 0 rgba(160, 160, 160, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Card-info h2 {
+  font-size: 90%;
+  margin-left: 2vw;
+}
+.Card-info p {
+  font-size: 70%;
+  margin-left: 2vw;
+}
+.Projects-cards {
+  display: grid;
+  grid-template-columns: 20.5vw 20.5vw;
+  grid-template-rows: 24vh 24vh;
+}
+.Project-card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
+}
+.Project-card-buttons > button {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  border: 0;
+  background-color: transparent;
+}
+.Project-card-buttons > button:hover {
+  cursor: pointer;
+}
+.Announcements {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.Announcements > h2 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 2vw;
+  font-size: 1.3vw;
+}
+.Announcement-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3%;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 8%;
+  height: 60%;
+  box-shadow: 0 1px 1px rgba(77, 77, 77, 0.2),
+    0 6px 20px 0 rgba(160, 160, 160, 0.19);
+}
+.Announcement h2 {
+  font-size: 2vh;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.Announcement {
+  width: 80%;
+}
+.Announcement p {
+  font-size: 1.5vh;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+.Announcement-holder .Announcement:nth-child(2) {
+  border-top: 2px solid rgba(160, 160, 160, 0.19);
+  border-bottom: 2px solid rgba(160, 160, 160, 0.19);
+}
