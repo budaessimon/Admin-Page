@@ -112,9 +112,13 @@ main {
   gap: 1.2vw;
   margin-left: 10vw;
 }
+.Profile-holder > h3 {
+  font-size: 1vw;
+  text-decoration: underline;
+}
 .Profile-image {
-  height: 6vh;
-  width: 6vh;
+  height: 2.5vw;
+  width: 2.5vw;
   background-image: url("../images/images.jpeg");
   background-size: cover;
   background-position: center;
@@ -139,12 +143,16 @@ main {
   margin-right: 20vw;
   margin-left: 0;
 }
-.Second-profile p {
-  font-size: small;
+.Profile-Text p {
+  font-size: 0.7vw;
+  font-weight: bold;
+}
+.Profile-Text h3 {
+  font-size: 1vw;
 }
 .Second-image {
-  width: 7.5vh;
-  height: 7.5vh;
+  width: 3.3vw;
+  height: 3.3vw;
   margin-right: 1vw;
   border-radius: 100%;
   background-image: url("../images/images.jpeg");
@@ -163,9 +171,9 @@ main {
   background-color: rgb(25, 146, 212);
   border: 0;
   border-radius: 20px;
-  width: 6rem;
-  height: 2.5rem;
-  font-size: 1.2rem;
+  width: 5vw;
+  height: 4.3vh;
+  font-size: 1vw;
   color: white;
 }
 .Project-buttons button:hover {
@@ -336,12 +344,21 @@ main {
 .Trend-image {
   width: 6vh;
   height: 6vh;
-}
-.Trends-holder .Trend .Trend-image:nth-child(odd) {
-  background-image: url("../images/images.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 100%;
   border: 1px solid black;
+}
+.Trends-holder .Trend:nth-child(1) .Trend-image {
+  background-image: url("../images/cat.jpeg");
+}
+.Trends-holder .Trend:nth-child(2) .Trend-image {
+  background-image: url("../images/images.jpeg");
+}
+.Trends-holder .Trend:nth-child(3) .Trend-image {
+  background-image: url("../images/bird.jpeg");
+}
+.Trends-holder .Trend:nth-child(4) .Trend-image {
+  background-image: url("../images/flower.jpeg");
 }
